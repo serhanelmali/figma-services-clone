@@ -1,6 +1,6 @@
 .service {
   position: relative;
-  margin: 50px; // sil
+  margin: 20px; // sil
   width: 200px;
   height: 217px;
   display: flex;
@@ -22,15 +22,17 @@
   }
 
   &__category {
-    margin-top: 44px;
+    margin-top: 40px;
+    height: 40px;
     width: 127px;
     text-align: center;
     overflow-wrap: break-word;
+    font-size: 18px;
+    line-height: 20px;
     color: #1e474f;
   }
 
   &__experts {
-    margin-top: 18px;
     height: 108px;
     display: flex;
     flex-direction: column;
