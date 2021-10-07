@@ -3,7 +3,7 @@ import styles from "./services.module.scss";
 
 const fetcher = async () => {
   const response = await fetch(
-    "https://basework-frontend-case-api.herokuapp.com/services/0/30"
+    "https://basework-frontend-case-api.herokuapp.com/services/0/12"
   );
   const data = await response.json();
   return data;
