@@ -20,8 +20,8 @@ export default function ServicesPage() {
       <main>
         <Services />
       </main>
-      {/*
       <Subscribe />
+      {/*
       <footer>
         <Footer />
       </footer> */}
