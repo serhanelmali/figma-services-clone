@@ -59,4 +59,11 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
+
+  footer {
+    display: flex;
+    justify-content: flex-start;
+    background: black;
+    width: 100%;
+  }
 }

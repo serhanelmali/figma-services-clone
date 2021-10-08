@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 import HeaderInfo from "../components/HeaderInfo";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
@@ -20,6 +21,9 @@ export default function ServicesPage() {
         <Services />
       </main>
       <Subscribe />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

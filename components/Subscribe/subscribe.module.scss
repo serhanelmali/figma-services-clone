@@ -1,7 +1,6 @@
 .subscribe {
   display: flex;
   position: relative;
-
   width: 100%;
   height: 500px;
 
@@ -11,6 +10,7 @@
     #f4efd1 54.02%,
     #fad3d0 87.31%
   );
+
   &__transition {
     position: absolute;
     display: flex;
@@ -25,37 +25,125 @@
     );
 
     &__container {
-      display: flex;
+      width: 1390px;
 
-      //   max-width: 1390px;
-      &__item {
-        max-width: 300px;
-        height: 168px;
-        margin-right: 50px;
-        padding: 0;
-        list-style: none;
+      &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
-        &:last-of-type {
-          margin-right: 0;
-        }
-
-        li {
+        &__items {
           display: flex;
-          align-items: center;
-          font-size: 21px;
-          height: 30px;
-          background: url("../../public/images/ListIcon.svg") no-repeat 0 0;
-          padding-left: 50px;
-          svg {
-            margin: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+
+          ul {
+            max-width: 300px;
+            height: 168px;
+            margin-right: 50px;
             padding: 0;
+            list-style: none;
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+
+            li {
+              display: flex;
+              align-items: center;
+              font-size: 21px;
+              min-height: 30px;
+              background: url("../../public/images/ListIcon.svg") no-repeat 0 0;
+              padding-left: 50px;
+
+              svg {
+                margin: 0;
+                padding: 0;
+              }
+            }
+
+            p {
+              max-width: 260px;
+              font-size: 12px;
+              line-height: 22px;
+              color: #0c0d0f;
+              padding-left: 50px;
+            }
           }
         }
-        p {
-          font-size: 12px;
-          line-height: 22px;
-          color: #0c0d0f;
-          padding-left: 50px;
+
+        &__subscription {
+          width: 100%;
+          display: flex;
+          margin-left: 25px;
+
+          &__message {
+            flex: 1;
+            p {
+              width: 368px;
+              font-size: 34px;
+              line-height: 150%;
+            }
+          }
+
+          &__input {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            input[type="email"] {
+              max-width: 560px;
+              height: 60px;
+              border-radius: 15px;
+              border: none;
+              padding-left: 29px;
+              font-size: 18px;
+            }
+
+            span {
+              font-size: 14px;
+              margin-top: 20px;
+            }
+
+            &__check {
+              margin-top: 30px;
+              display: flex;
+
+              span {
+                font-size: 16px;
+                margin: auto 0 auto 10px;
+              }
+
+              input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background: white;
+                border-radius: 5px;
+
+                transition: all 0.3s ease-in-out;
+              }
+
+              input[type="checkbox"]:checked {
+                background: #0c0d0f;
+                border: 1px solid rgb(92, 92, 92);
+              }
+            }
+            button {
+              margin-top: 40px;
+              max-width: 261px;
+              height: 60px;
+              border-radius: 30px;
+              border: none;
+              background: #0c0d0f;
+              color: white;
+              cursor: pointer;
+            }
+          }
         }
       }
     }
