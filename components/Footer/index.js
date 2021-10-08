@@ -14,47 +14,6 @@ const Footer = () => {
         <div className={styles.footer__top__button__container}>
           <button>Join</button>
         </div>
-
-        {/* <div>
-            <ul>
-              <h5>Stunner</h5>
-              <li>
-                <a>How It Works</a>
-              </li>
-              <li>
-                <a>Advantages of Great</a>
-              </li>
-              <li>
-                <a>45/Expert/Categories</a>
-              </li>
-              <li>
-                <a>Apply to be an expert</a>
-              </li>
-            </ul>
-
-            <ul>
-              <h5>Follow us</h5>
-              <li>
-                <a>Facebook</a>
-              </li>
-              <li>
-                <a>Twitter</a>
-              </li>
-              <li>
-                <a>Instagram</a>
-              </li>
-              <li>
-                <a>LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <span>© 2021 Great Inc.</span>
-          <div>
-            <a>Privacy policy</a>
-            <a>Cookie Policy</a>
-          </div> */}
       </div>
       <div className={styles.footer__mid}>
         <div className={styles.footer__mid__addresses}>
@@ -84,6 +43,46 @@ const Footer = () => {
             <br />
             (415) 300-2889
           </p>
+        </div>
+        <div className={styles.footer__mid__links}>
+          <ul>
+            <h5>Stunner</h5>
+            <li>
+              <a>How It Works</a>
+            </li>
+            <li>
+              <a>Advantages of Great</a>
+            </li>
+            <li>
+              <a>45/Expert/Categories</a>
+            </li>
+            <li>
+              <a>Apply to be an expert</a>
+            </li>
+          </ul>
+
+          <ul>
+            <h5>Follow us</h5>
+            <li>
+              <a>Facebook</a>
+            </li>
+            <li>
+              <a>Twitter</a>
+            </li>
+            <li>
+              <a>Instagram</a>
+            </li>
+            <li>
+              <a>LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className={styles.footer__bottom}>
+        <span>© 2021 Great Inc.</span>
+        <div className={styles.footer__bottom__policies}>
+          <a>Privacy policy</a>
+          <a>Cookie Policy</a>
         </div>
       </div>
     </div>
