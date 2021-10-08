@@ -23,7 +23,11 @@ const Navbar = () => {
         <div></div>
         <div></div>
       </div>
-      <ul className={styles.navbar__pages}>
+      <ul
+        className={
+          !isHamburger ? styles.navbar__pages : styles.navbar__pages__active
+        }
+      >
         <li>How It Works</li>
         <li>Advantages</li>
         <li>Services</li>
