@@ -7,7 +7,7 @@
 
   &__top {
     padding: 99px 0 137px 0;
-    width: 1100px;
+    width: 1300px;
     display: flex;
     align-items: flex-end;
     color: white;
@@ -32,6 +32,8 @@
 
     &__button__container {
       flex: 1;
+      padding-right: 50px;
+
       button {
         float: right;
         width: 200px;
@@ -41,6 +43,12 @@
         background: #0c0d0f;
         color: #fff;
         cursor: pointer;
+
+        transition: all 0.1s ease-in;
+        &:hover {
+          color: #0c0d0f;
+          background: #fff;
+        }
       }
     }
   }
@@ -48,7 +56,7 @@
   &__mid {
     display: flex;
     color: white;
-    width: 1100px;
+    width: 1300px;
 
     &__addresses {
       max-height: 236px;
@@ -78,6 +86,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
+        padding-right: 50px;
         line-height: 220%;
         list-style: none;
         color: white;
@@ -90,7 +99,7 @@
 
         &:first-of-type {
           flex: 1;
-          padding-left: 150px;
+          padding-left: 120px;
         }
 
         li {
@@ -110,7 +119,7 @@
   }
 
   &__bottom {
-    width: 1100px;
+    width: 1400px;
     padding: 143px 0 32px 0;
     color: white;
     display: flex;
@@ -118,6 +127,10 @@
     opacity: 0.8;
     font-size: 14px;
     cursor: default;
+
+    span {
+      padding-left: 50px;
+    }
 
     &__policies {
       a {
