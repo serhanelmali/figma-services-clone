@@ -15,15 +15,15 @@ export default function ServicesPage() {
       </Head>
       <header>
         <Navbar />
-        <HeaderInfo />
+        {/* <HeaderInfo /> */}
       </header>
-      <main>
+      {/* <main>
         <Services />
       </main>
       <Subscribe />
       <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 }
