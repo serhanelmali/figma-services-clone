@@ -79,3 +79,37 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .service {
+    width: 157.5px;
+    height: 188px;
+    margin-top: 20px;
+    margin-inline: 10px;
+
+    &__icon {
+      position: relative;
+      left: 0;
+      top: 20px;
+      width: 40px;
+    }
+
+    &__category {
+      margin-top: 30px;
+    }
+
+    &__experts {
+      &__title {
+        display: none;
+      }
+
+      &__images {
+        margin: 0 auto 0 auto;
+      }
+
+      &__names {
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

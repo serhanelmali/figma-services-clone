@@ -16,3 +16,17 @@
     font-weight: 200;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .headerInfo {
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      padding-inline: 20px;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}
