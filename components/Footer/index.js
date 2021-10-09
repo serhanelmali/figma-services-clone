@@ -17,32 +17,38 @@ const Footer = () => {
       </div>
       <div className={styles.footer__mid}>
         <div className={styles.footer__mid__addresses}>
-          <p>
-            1447 2nd St
-            <br /> Santa Monica, CA 90401
-          </p>
-          <p>
-            333 SE 2nd Ave
-            <br /> Suite 2000
-            <br /> Miami, FL 33131
-            <br /> (786) 833-9688
-          </p>
-          <p>
-            1341 W Mockingbird Ln
-            <br />
-            Dallas, TX 75247
-            <br />
-            (214) 380-2666
-          </p>
-          <p>
-            3 E Third Ave
-            <br />
-            Suite 200
-            <br />
-            San Mateo, CA 94401
-            <br />
-            (415) 300-2889
-          </p>
+          <div className={styles.footer__mid__addresses__wrapper}>
+            <p>
+              1447 2nd St
+              <br /> Santa Monica, CA 90401
+            </p>
+            <p>
+              333 SE 2nd Ave
+              <br /> Suite 2000
+              <br /> Miami, FL 33131
+              <br /> (786) 833-9688
+            </p>
+            <p>
+              1341 W Mockingbird Ln
+              <br />
+              Dallas, TX 75247
+              <br />
+              (214) 380-2666
+            </p>
+            <p>
+              3 E Third Ave
+              <br />
+              Suite 200
+              <br />
+              San Mateo, CA 94401
+              <br />
+              (415) 300-2889
+            </p>
+          </div>
+          <div className={styles.footer__mid__addresses__policies}>
+            <a>Privacy policy</a>
+            <a>Cookie Policy</a>
+          </div>
         </div>
         <div className={styles.footer__mid__links}>
           <ul>

@@ -59,18 +59,26 @@
     width: 1300px;
 
     &__addresses {
-      max-height: 236px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      line-height: 150%;
-      cursor: default;
+      &__wrapper {
+        max-height: 236px;
+        max-width: 180px;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        line-height: 150%;
+        cursor: default;
 
-      p {
-        font-size: 14px;
-        opacity: 0.8;
-        height: 82px;
+        p {
+          font-size: 14px;
+          opacity: 0.8;
+          height: 82px;
+        }
+      }
+
+      &__policies {
+        display: none;
       }
     }
 
@@ -142,6 +150,102 @@
         &:first-of-type {
           margin-right: 32px;
         }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 720px) {
+  .footer {
+    &__top {
+      width: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 50px 0 50px 15px;
+
+      &__text {
+        max-width: 351px;
+        h4 {
+          font-size: 32px;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 16px;
+        }
+      }
+
+      button {
+        margin-top: 50px;
+        height: 50px;
+      }
+    }
+
+    &__mid {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+      padding-left: 15px;
+
+      &__addresses {
+        display: flex;
+        order: 1;
+        &__wrapper {
+          margin-top: 46px;
+          max-height: 550px;
+
+          flex-wrap: nowrap;
+
+          p {
+            height: auto;
+            margin: 0 0 20px 0;
+          }
+        }
+
+        &__policies {
+          display: flex;
+          flex-direction: column;
+          margin-top: 50px;
+          font-size: 14px;
+          opacity: 0.8;
+          line-height: 150%;
+        }
+      }
+
+      &__links {
+        ul {
+          padding: 0;
+          line-height: 150%;
+
+          &:first-of-type {
+            padding: 0;
+            max-width: 180px;
+          }
+
+          &:last-of-type {
+            flex: 1;
+          }
+
+          h5 {
+            font-size: 16px;
+            margin: 0 0 15px 0;
+          }
+
+          li {
+            line-height: 220%;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      width: 100%;
+      height: 40px;
+      padding: 0 0 0 15px;
+      span {
+        padding-left: 0;
+      }
+      a {
+        display: none;
       }
     }
   }

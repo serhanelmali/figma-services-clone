@@ -21,10 +21,10 @@ export default function ServicesPage() {
         <Services />
       </main>
       <Subscribe />
-      {/*
+
       <footer>
         <Footer />
-      </footer> */}
+      </footer>
     </div>
   );
 }
