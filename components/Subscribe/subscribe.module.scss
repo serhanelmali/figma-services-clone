@@ -3,7 +3,6 @@
   position: relative;
   width: 100%;
   height: 550px;
-
   background: linear-gradient(
     113.46deg,
     #d8e9f5 21.79%,
@@ -25,7 +24,8 @@
     );
 
     &__container {
-      width: 1390px;
+      width: 100%;
+      max-width: 1390px;
 
       &__wrapper {
         width: 100%;
@@ -95,7 +95,8 @@
             flex: 1;
 
             input[type="email"] {
-              max-width: 560px;
+              max-width: 500px;
+              width: 90%;
               height: 60px;
               border-radius: 15px;
               border: none;
@@ -104,7 +105,8 @@
             }
 
             span {
-              font-size: 14px;
+              width: 80%;
+              font-size: 12px;
               margin-top: 20px;
             }
 
@@ -113,7 +115,8 @@
               display: flex;
 
               span {
-                font-size: 16px;
+                width: 65%;
+                font-size: 14px;
                 margin: auto 0 auto 10px;
               }
 
@@ -136,13 +139,20 @@
             }
             button {
               margin-top: 40px;
-              max-width: 261px;
+              width: 100%;
+              max-width: 201px;
               height: 60px;
               border-radius: 30px;
               border: none;
               background: #0c0d0f;
               color: white;
               cursor: pointer;
+              transition: all 0.1s ease-in;
+
+              &:hover {
+                background: white;
+                color: black;
+              }
             }
           }
         }
@@ -151,7 +161,97 @@
   }
 }
 
-@media screen and(max-width: 720px) {
+@media screen and(min-width: 376px) and (max-width: 768px) {
+  .subscribe {
+    min-height: 950px;
+    &__transition {
+      padding-bottom: 100px;
+      &__container {
+        &__wrapper {
+          &__items {
+            flex-wrap: wrap;
+            align-items: center;
+
+            ul {
+              margin-left: 20px;
+              height: auto;
+              width: 100%;
+
+              li {
+                width: 100%;
+                font-size: 18px;
+                padding-left: 44px;
+              }
+
+              p {
+                max-width: 90%;
+                font-size: 12px;
+                line-height: 150%;
+              }
+
+              &:last-of-type {
+                width: 100%;
+              }
+            }
+          }
+
+          &__subscription {
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 20px;
+
+            &__message {
+              width: 100%;
+              padding: 0;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+
+              p {
+                font-size: 22px;
+                margin-top: 0;
+                max-width: 250px;
+                padding-left: 0;
+              }
+            }
+
+            &__input {
+              align-items: center;
+              flex: 0;
+
+              &__check {
+                margin-top: 13px;
+                span {
+                  font-size: 12px;
+                  margin-left: 5px;
+                }
+              }
+
+              span {
+                order: 1;
+                font-size: 12px;
+                text-align: center;
+              }
+
+              input[type="email"] {
+                width: 335px;
+                height: 50px;
+              }
+
+              button {
+                margin-top: 37px;
+                width: 200px;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 375px) {
   .subscribe {
     min-height: 1000px;
     &__transition {
@@ -165,11 +265,14 @@
               height: auto;
 
               li {
-                width: 80%;
+                width: 100%;
+                font-size: 18px;
+                padding-left: 44px;
               }
 
               p {
                 max-width: 250px;
+                font-size: 12px;
                 line-height: 150%;
               }
             }
@@ -187,6 +290,7 @@
                 font-size: 22px;
                 margin-top: 0;
                 max-width: 250px;
+                padding-left: 44px;
               }
             }
 

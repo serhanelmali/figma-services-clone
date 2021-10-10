@@ -83,7 +83,23 @@
   }
 }
 
-@media screen and(max-width: 720px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    &__pages {
+      ul {
+        li {
+          margin-right: 20px;
+
+          &:last-of-type {
+            padding: 15px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
     &__hamburger,
