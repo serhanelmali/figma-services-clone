@@ -21,7 +21,7 @@
     cursor: pointer;
 
     transition: all 0.3s ease-in-out 0s;
-    animation: fade 1s linear 1s;
+    animation: fade 1s ease-in-out 1s;
 
     div {
       width: 22px;
@@ -39,9 +39,9 @@
 
   &__pages,
   &__pages__active {
-    padding-top: 55px;
     display: flex;
     justify-content: center;
+    animation: fade 0.3s linear 0s;
 
     ul {
       list-style: none;
@@ -77,6 +77,10 @@
       }
     }
   }
+
+  &__pages__active {
+    opacity: 0;
+  }
 }
 
 @media screen and(max-width: 720px) {
@@ -90,7 +94,6 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      animation: fade 1s linear 1s;
     }
 
     &__hamburger__active {
@@ -118,14 +121,16 @@
     }
 
     &__pages__active {
+      padding-top: 55px;
       position: absolute;
       left: 0;
       top: 0;
+      opacity: 1;
       background: white;
       z-index: 3;
       height: 100%;
-
       width: 100%;
+
       ul {
         margin-top: 55px;
         width: 90%;

@@ -1,12 +1,21 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./navbar.module.scss";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const Navbar = () => {
   const [isHamburger, setIsHamburger] = useState(false);
   const hamburgerHandler = () => {
     setIsHamburger(!isHamburger);
   };
+
+  const { height, width } = useWindowDimensions();
+
+  useEffect(() => {
+    if (width > 375) {
+      setIsHamburger(false);
+    }
+  }, [width]);
 
   return (
     <div className={styles.navbar}>
@@ -34,12 +43,14 @@ const Navbar = () => {
           {!isHamburger ? <li>Services</li> : <li>45 Expert/Categories</li>}
           <li>Apply to be an expert</li>
 
-          <li>
-            <Image width={30} height={30} src="/images/YoutubeIcon.svg" />
-            <Image width={30} height={30} src="/images/FacebookIcon.svg" />
-            <Image width={30} height={30} src="/images/InstagramIcon.svg" />
-            <Image width={30} height={30} src="/images/LinkedInIcon.svg" />
-          </li>
+          {isHamburger && (
+            <li>
+              <Image width={30} height={30} src="/images/YoutubeIcon.svg" />
+              <Image width={30} height={30} src="/images/FacebookIcon.svg" />
+              <Image width={30} height={30} src="/images/InstagramIcon.svg" />
+              <Image width={30} height={30} src="/images/LinkedInIcon.svg" />
+            </li>
+          )}
         </ul>
       </div>
     </div>
