@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./navbar.module.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsHamburger(!isHamburger);
   };
 
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   useEffect(() => {
     if (width > 375) {
@@ -27,10 +27,13 @@ const Navbar = () => {
             : styles.navbar__hamburger__active
         }
         onClick={hamburgerHandler}
+        onKeyDown=""
+        role="button"
+        tabIndex="0"
       >
-        <div></div>
-        <div></div>
-        <div></div>
+        <div />
+        <div />
+        <div />
       </div>
       <div
         className={
